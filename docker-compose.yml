@@ -1,0 +1,19 @@
+version: "3"
+services:
+  test:
+    image: "legman-logger"
+    build: .
+  leakage:
+    image: "legman-logger"
+    build: .
+    command: npm run leakage
+  lint:
+    image: "legman-logger"
+    build: .
+    command: npm run lint
+  example:
+    image: "legman-logger"
+    build: .
+    command: sh -c "cd example && npx tsc -p . && node ."
+    ports:
+      - "127.0.0.1:8080:8080"
