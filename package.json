@@ -1,7 +1,7 @@
 {
   "name": "legman-logger",
-  "version": "1.0.0",
-  "description": "A simple library build for streaming in strictly object mode",
+  "version": "1.0.1",
+  "description": "Enhances Legman for typical logger purposes",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
